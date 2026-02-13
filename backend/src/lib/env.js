@@ -15,17 +15,3 @@ export const ENV ={
 
 
 
-
-// PORT = 3000
-// MONGO_URL =mongodb+srv://6suhanisingh9_db_user:dYPRXxHFnQlLfxqw@cluster0.faxtmza.mongodb.net/Darkline_DB?appName=Cluster0
-
-// NODE_ENV=dvelopment
-
-// JWT_SECRET=yourjwtsecret
-
-// RESEND_API_KEY=re_5HKpDk4T_GKnvwtCpEoNGZCW1ebN4TJEx
-
-// EMAIL_FROM="onboarding@resend.dev"
-// EMAIL_FROM_NAME="DarkLine"
-
-// CLIENT_URL = http://localhost:5173
