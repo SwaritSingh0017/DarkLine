@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 
-export const ENV ={
+export const ENV = {
     PORT: process.env.PORT,
     MONGO_URL: process.env.MONGO_URL,
     JWT_SECRET: process.env.JWT_SECRET,
@@ -10,6 +10,9 @@ export const ENV ={
     RESEND_API_KEY: process.env.RESEND_API_KEY,
     EMAIL_FROM: process.env.EMAIL_FROM,
     EMAIL_FORM_NAME: process.env.EMAIL_FORM_NAME,
+    CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
+    CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
+    CLOUDINARY_API_SECRET:process.env.CLOUDINARY_API_SECRET,
 };
 
 
