@@ -1,12 +1,12 @@
 import { resendClient, sender} from "../lib/resend.js"
 import {createWelcomeEmailTemplate} from "../email/emialTemplates.js"
 
-export const sendWelcomeEmail = async(email,name,clintURL) => {
+export const sendWelcomeEmail = async(email,name,clientURL) => {
     const {data,error} = await resendClient.emails.send({
         from:`${sender.name}<${sender.email}>`,
         to: email,
         subject: "Welcome To DarkLine",
-        html:  createWelcomeEmailTemplate(name,clintURL),
+        html:  createWelcomeEmailTemplate(name,clientURL),
     });
 
     if(error){

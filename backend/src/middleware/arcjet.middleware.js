@@ -20,9 +20,8 @@ export const arcjetProtection = async (req, res, next) => {
 
         //CHECK FOR SPOOFED BOT
         if (decision.results.some(isSpoofedBot)) {
-            return NextResponse.json(
-                { error: "Forbidden", reason: decision.reason },
-                { status: 403 },
+            return res.status(403).json(
+                { error: "Forbidden", reason: decision.reason }
             );
         }
 
