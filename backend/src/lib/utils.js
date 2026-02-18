@@ -5,7 +5,7 @@ export const generateToken = (userId, res) => {
 
     const { JWT_SECRET } = ENV;
     if(!JWT_SECRET){
-        throw new error("JWT_SECRET is not configured");
+        throw new Error("JWT_SECRET is not configured");
     }
 
 
